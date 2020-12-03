@@ -78,7 +78,7 @@ class CountDown extends React.Component {
     };
 
     render() {
-        const { newYear, months, days, hours, mins, secs } = this.state;
+        const { days, hours, mins, secs } = this.state;
         return (
             <Content className="count-down-page">
                 <div className="main">

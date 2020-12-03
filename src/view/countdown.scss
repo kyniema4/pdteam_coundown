@@ -20,6 +20,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 10rem;
+
+    @media (min-width: 576px) {
+      padding-bottom: 0;
+    }
   }
   .main {
     min-height: 100%;
@@ -51,28 +56,40 @@
       }
       .number-time {
         color: white;
-        font-size: 72px;
+        font-size: 10vw;
         font-family: 'Montserrat-Bold', sans-serif;
         letter-spacing: 0.72px;
+        @media screen and (min-width: 576px) {
+          font-size: 72px;
+        }
       }
       .text-time {
         color: white;
-        font-size: 16px;
+        font-size: 14px;
         letter-spacing: 0.48px;
         font-family: 'Montserrat-Bold', sans-serif;
+        @media (min-width: 576px) {
+          font-size: 16px;
+        }
       }
       .title-content {
         color: white;
-        font-size: 18px;
+        font-size: 16px;
         font-family: 'Montserrat-Bold', sans-serif;
         margin-bottom: 14px;
         letter-spacing: 0.54px;
+        @media screen and (min-width: 576px) {
+          font-size: 18px;
+        }
       }
       .text-content {
         color: white;
-        font-size: 14px;
+        font-size: 12px;
         font-family: 'Montserrat-Regular', sans-serif;
         letter-spacing: 0.42px;
+        @media screen and (min-width: 576px) {
+          font-size: 14px;
+        }
       }
       .height {
         height: 0;
@@ -82,7 +99,7 @@
       }
       .div-col-right {
         position: absolute;
-        top: 70%;
+        top: 53%;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
@@ -102,6 +119,9 @@
           flex-direction: unset;
           justify-content: unset;
         }
+        @media screen and (min-width: 576px) {
+          top: 70%;
+        }
 
         .padding-right {
           padding-right: 0;
@@ -114,7 +134,7 @@
 
     .div-title-main {
       position: absolute;
-      top: 24%;
+      top: 18%;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
@@ -126,14 +146,18 @@
         width: unset;
         text-align: unset;
       }
+      @media (min-width: 576px) {
+        top: 24%;
+      }
 
       .title-main {
         color: white;
-        font-size: 55px;
-        //font-size: 4.2vw;
+        font-size: 9.5vw;
         letter-spacing: 0.88px;
         font-family: 'Montserrat-Bold', sans-serif;
-
+        @media screen and (min-width: 576px) {
+          font-size: 55px;
+        }
         @media screen and (min-width: 1200px) {
           font-size: 4.2vw;
         }
